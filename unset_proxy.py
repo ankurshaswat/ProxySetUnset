@@ -56,7 +56,7 @@ else:
 with open(p1, 'w') as bash:
     bash.writelines(file_text)
 
-uncomm_http = 'Acquire::https { Proxy "https://proxy22.iitd.ac.in:3128"; }\n'
+uncomm_https = 'Acquire::https { Proxy "https://proxy22.iitd.ac.in:3128"; }\n'
 comm_https = '#' + uncomm_https
 
 if comm_https in file_text:
